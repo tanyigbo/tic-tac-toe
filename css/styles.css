@@ -1,3 +1,45 @@
-body {
-    background-color: green;
+#page {
+    display: grid;
+    width: 100%;
+    height: 600px;
+    grid-template-areas:
+        'heading'
+        'game-bar'
+        'main-section'
+        'footer';
+    grid-template-rows: 50px 1fr 50px;
+}
+
+.grid-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: red;
+}
+
+main {
+    background-color: yellow;
+    flex-direction: column;
+}
+
+#status-area {
+    background-color: blue;
+}
+
+#game-board {
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+}
+
+#start-btn {
+    width: 100px;
+    height: 20px;
+}
+
+footer {
+    background-color: grey;
 }
