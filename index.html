@@ -6,31 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
+    <title>Tic Tac Toe</title>
 </head>
 
 <body>
-    <section id="page">
-        <header>
-            <h1 id="game-title" class="grid-items">Tic Tac Toe</h1>
-        </header>
+    <header>
+        <h1 id="game-title">Tic Tac Toe</h1>
+    </header>
 
-
-
-        <main class="grid-items">
-            <section id="status-area" class="grid-items">
-                <h2 id="x-sym">X</h2>
-                <h2 id="o-sym">O</h2>
-            </section>
-
-            <div id="game-board"></div>
+    <main class="">
+        <div id="status-area">
+            <h2 id="x-sym">X</h2>
+            <h3>Player 1</h3>
+            <h2 id="o-sym">O</h2>
+            <h3>Player 2</h3>
+            <h1 id="win-banner">Winner</h1>
             <button id="start-btn">New Game</button>
-        </main>
+        </div>
 
-        <footer class="grid-items">
-            <p>Thanks for playing</p>
-        </footer>
-    </section>
+        <div id="game-board">
+            <div class="board-grid top left"></div>
+            <div class="board-grid top center"></div>
+            <div class="board-grid top right"></div>
+            <div class="board-grid mid left"></div>
+            <div class="board-grid mid center"></div>
+            <div class="board-grid mid right"></div>
+            <div class="board-grid bottom left"></div>
+            <div class="board-grid bottom center"></div>
+            <div class="board-grid bottom right"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Tic-Tac-Toe by <a href="https://github.com/tanyigbo/tic-tac-toe" target="_blank"
+                rel="noopener noreferrer">Tobe
+                Anyigbo</a> </p>
+        <p>Thanks for playing</p>
+    </footer>
+
 
     <script src="js/script.js"></script>
 </body>
