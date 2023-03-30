@@ -10,8 +10,6 @@ function updateSquare(game, event) {
 }
 
 function endGameCheck(activeGame) {
-    console.log(`Starting turn ${activeGame.turnCount}`)
-    console.log(`Game should end: ${activeGame.endGame}`)
     if (activeGame.endGame) {
         console.log("Game Ended")
         displayWinner()
@@ -70,11 +68,48 @@ grid00.addEventListener('click', (event) => {
         updateSquare(game, event)
     }
 })
-grid01.addEventListener('click', (event) => { updateSquare(game, event) })
-grid02.addEventListener('click', (event) => { updateSquare(game, event) })
-grid10.addEventListener('click', (event) => { updateSquare(game, event) })
-grid11.addEventListener('click', (event) => { updateSquare(game, event) })
-grid12.addEventListener('click', (event) => { updateSquare(game, event) })
-grid20.addEventListener('click', (event) => { updateSquare(game, event) })
-grid21.addEventListener('click', (event) => { updateSquare(game, event) })
-grid22.addEventListener('click', (event) => { updateSquare(game, event) })
+grid01.addEventListener('click', (event) => {
+    if (!game.endGame) {
+        updateSquare(game, event)
+    }
+})
+grid01.addEventListener('click', (event) => {
+    if (!game.endGame) {
+        updateSquare(game, event)
+    }
+})
+grid02.addEventListener('click', (event) => {
+    if (!game.endGame) {
+        updateSquare(game, event)
+    }
+})
+grid10.addEventListener('click', (event) => {
+    if (!game.endGame) {
+        updateSquare(game, event)
+    }
+})
+grid11.addEventListener('click', (event) => {
+    if (!game.endGame) {
+        updateSquare(game, event)
+    }
+})
+grid12.addEventListener('click', (event) => {
+    if (!game.endGame) {
+        updateSquare(game, event)
+    }
+})
+grid20.addEventListener('click', (event) => {
+    if (!game.endGame) {
+        updateSquare(game, event)
+    }
+})
+grid21.addEventListener('click', (event) => {
+    if (!game.endGame) {
+        updateSquare(game, event)
+    }
+})
+grid22.addEventListener('click', (event) => {
+    if (!game.endGame) {
+        updateSquare(game, event)
+    }
+})

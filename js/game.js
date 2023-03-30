@@ -40,11 +40,6 @@ class Game {
         let downDiagCheck = this.downDiagonal.reduce((sum, num) => { return sum + num })
         let upDiagCheck = this.upDiagonal.reduce((sum, num) => { return sum + num })
 
-        for (let element of this.cells) {
-            console.log(element)
-        }
-
-        console.log(rowCheck, columnCheck, downDiagCheck, upDiagCheck)
         if (rowCheck === 0 || rowCheck === 3 || columnCheck === 0 || columnCheck === 3) {
             console.log('Called Endgame')
             this.gameWon()
