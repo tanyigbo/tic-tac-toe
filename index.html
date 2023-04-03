@@ -6,40 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="#" />
     <title>Tic Tac Toe</title>
 </head>
 
 <body>
     <header>
-        <h1 id="game-title">Tic Tac Toe</h1>
+        <h1>Tic Tac Toe</h1>
     </header>
 
-    <main class="">
-        <div id="status-area">
-            <h2 id="x-sym">X</h2>
-            <h2 id="o-sym">O</h2>
-            <h1 id="game-status">Player X Turn</h1>
-            <button id="start-btn">New Game</button>
-        </div>
+    <section id="status-area">
+        <h1 id="game-status">Player X Turn</h1>
+        <audio id="x-sound">
+            <source src="audio/Speech On.wav">
+        </audio>
+        <audio id="o-sound">
+            <source src="audio/Speech Sleep.wav">
+        </audio>
+        <audio id="new-game-sound">
+            <source src="audio/Windows Unlock.wav">
+        </audio>
+        <audio id="win-sound">
+            <source src="audio/tada.wav">
+        </audio>
+        <audio id="invalid-move-sound">
+            <source src="audio/Windows Critical Stop.wav">
+        </audio>
+    </section>
 
+    <main>
         <div id="game-board">
-            <div data-row="0" data-column="0" data-status="E" class="board-grid left"> </div>
-            <div data-row="0" data-column="1" data-status="E" class="board-grid"> </div>
+            <div data-row="0" data-column="0" data-status="E" class="board-grid left"></div>
+            <div data-row="0" data-column="1" data-status="E" class="board-grid"></div>
             <div data-row="0" data-column="2" data-status="E" class="board-grid right"></div>
-            <div data-row="1" data-column="0" data-status="E" class="board-grid mid left"> </div>
-            <div data-row="1" data-column="1" data-status="E" class="board-grid mid"> </div>
-            <div data-row="1" data-column="2" data-status="E" class="board-grid mid right"> </div>
-            <div data-row="2" data-column="0" data-status="E" class="board-grid left"> </div>
-            <div data-row="2" data-column="1" data-status="E" class="board-grid"> </div>
-            <div data-row="2" data-column="2" data-status="E" class="board-grid right"> </div>
+            <div data-row="1" data-column="0" data-status="E" class="board-grid mid left"></div>
+            <div data-row="1" data-column="1" data-status="E" class="board-grid mid"></div>
+            <div data-row="1" data-column="2" data-status="E" class="board-grid mid right"></div>
+            <div data-row="2" data-column="0" data-status="E" class="board-grid left"></div>
+            <div data-row="2" data-column="1" data-status="E" class="board-grid"></div>
+            <div data-row="2" data-column="2" data-status="E" class="board-grid right"></div>
         </div>
     </main>
+
+    <section id="restart">
+        <button id="start-btn">New Game</button>
+    </section>
 
     <footer>
         <p>Tic-Tac-Toe by <a href="https://github.com/tanyigbo/tic-tac-toe" target="_blank"
                 rel="noopener noreferrer">Tobe
                 Anyigbo</a> </p>
-        <p>Thanks for playing</p>
     </footer>
 
 
