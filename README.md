@@ -6,7 +6,7 @@ The website takes a minimalist approach to representing the game Tic-Tac-Toe.
 
 ## Wireframe
 <p align="center">
-<img src="resources/project_wireframe.pdf">
+<img src="/resources/project_wireframe.pdf">
 </p>
 
 ## User Stories
