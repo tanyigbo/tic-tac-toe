@@ -6,7 +6,7 @@ The website takes a minimalist approach to representing the game Tic-Tac-Toe.
 
 ## Wireframe
 <p align="center">
-<img src="https://github.com/tanyigbo/tic-tac-toe/tree/main/resources/wireframe.png">
+<img src="https://github.com/tanyigbo/tic-tac-toe/blob/main/resources/wireframe.PNG">
 </p>
 
 ## User Stories
