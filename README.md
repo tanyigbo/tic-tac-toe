@@ -4,12 +4,18 @@
 
 The website takes a minimalist approach to representing the game Tic-Tac-Toe. 
 
+<p align="center" >
+<img src="https://github.com/tanyigbo/tic-tac-toe/blob/main/resources/win.PNG" width='600'>
+</p>
+
 ## Wireframe
 <p align="center">
-<img src="https://github.com/tanyigbo/tic-tac-toe/blob/main/resources/wireframe.PNG">
+<img src="https://github.com/tanyigbo/tic-tac-toe/blob/main/resources/wireframe.PNG" width='600'>
 </p>
 
 ## User Stories
+
+### Main Goals
 - As a user, I should be able to start a new tic tac toe game
 - As a user, I should be able to click on a square to add X first and then O, and so on
 - As a user, I should be shown a message after each turn for if I win, lose, tie or who's turn it is next
@@ -18,8 +24,6 @@ The website takes a minimalist approach to representing the game Tic-Tac-Toe.
 - As a user, I should not be able to continue playing once I win, lose, or tie
 - As a user, I should be able to play the game again without refreshing the page
 
-### Main Goals
-- 
 ### Optional Goals
 - Add hover effect and animation
 - Add audio 
